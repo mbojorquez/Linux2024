@@ -1,4 +1,4 @@
-# Let NetworkManager manage all devices on this system
+#CONFIGURACION IP ESTATICA
 #Configuración validada en Ubuntu 22.04
 #Adaptar nombre de tarjeta de red, nombre de red, contraseña, IP, gateway & nameservers
 network:
