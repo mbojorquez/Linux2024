@@ -1,13 +1,20 @@
 # Let NetworkManager manage all devices on this system
 #Configuración validada en Ubuntu 22.04
-#Adaptar nombre de tarjeta de red, IP, gateway & nameservers
+#Adaptar nombre de tarjeta de red, nombre de red, contraseña, IP, gateway & nameservers
 network:
   version: 2
   renderer: networkd
-  ethernets:
+  wifis:
     wlp0s20f3:
-      addresses: [192.168.18.72/24]
-      gateway4: 192.168.18.1
+      dhcp4: false
+      access-points:
+        "nombre_de_red":
+           password: "contraseña"
+      addresses: [192.168.18.60/24]
+      routes:
+        - to: default
+          via: 192.168.18.1
       nameservers:
-       addresses: [1.1.1.1, 1.0.0.1]
-
+        addresses:
+          - 1.1.1.1
+          - 1.0.0.1
