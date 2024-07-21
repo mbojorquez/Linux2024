@@ -1,4 +1,4 @@
-#CONFIGURACION IP ESTATICA
+#CONFIGURACION IP ESTATICA USANDO WIFI
 #Configuración validada en Ubuntu 22.04
 #Adaptar nombre de tarjeta de red, nombre de red, contraseña, IP, gateway & nameservers
 network:
